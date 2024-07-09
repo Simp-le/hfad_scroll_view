@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints=""
+            android:hint="@string/message"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edit_text_shape"
+            android:padding="16dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="#B0CA87"
+            android:textColor="#1D1B20"
+            android:textColorHint="#1D1B20"
+            android:textCursorDrawable="@drawable/text_cursor_shape"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/send"
+            android:backgroundTint="?attr/colorOnSurface"
+            android:textColor="?attr/colorSurface"/>
+    </LinearLayout>
+</ScrollView>
